@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:elevation="@dimen/_2sdp"
+    android:focusable="true"
+    app:cardCornerRadius="@dimen/_8sdp"
+    app:cardUseCompatPadding="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/verse_selector">
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:orientation="vertical"
+            android:padding="@dimen/_6sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <ImageView
+                    android:layout_width="@dimen/_24sdp"
+                    android:layout_height="@dimen/_24sdp"
+                    android:layout_weight="0.1"
+                    android:background="@drawable/bg_shimmer" />
+
+                <TextView
+                    android:id="@+id/tvVerseNumber"
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:background="@drawable/bg_shimmer"
+                    android:fontFamily="@font/baloo_bhai_2_semibold"
+                    android:textColor="@color/pitambar"
+                    android:textSize="@dimen/_15ssp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/ivNext"
+                    android:layout_width="@dimen/_24sdp"
+                    android:layout_height="@dimen/_24sdp"
+                    android:layout_marginStart="@dimen/_155sdp"
+                    android:layout_weight="0.1"
+                    android:background="@drawable/bg_shimmer" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/verseSanskrit"
+                android:layout_width="@dimen/_260sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:background="@drawable/bg_shimmer"
+                android:textSize="@dimen/_15sdp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginStart="@dimen/_17sdp"
+                android:layout_marginTop="@dimen/_8sdp"/>
+
+            <TextView
+                android:id="@+id/verseSanskrit1"
+                android:layout_width="@dimen/_260sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:background="@drawable/bg_shimmer"
+                android:textSize="@dimen/_15sdp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginStart="@dimen/_17sdp"
+                android:layout_marginTop="@dimen/_5sdp"/>
+
+            <TextView
+                android:id="@+id/tvVerse"
+                android:layout_width="@dimen/_290sdp"
+                android:layout_height="@dimen/_70sdp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/_3sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_weight="2"
+                android:background="@drawable/bg_shimmer"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13sdp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/backgroundImage1"
+            android:layout_width="@dimen/_76sdp"
+            android:layout_height="@dimen/_76sdp"
+            android:alpha="0.3"
+            android:background="@android:color/transparent"
+            android:scaleType="centerInside"
+            android:src="@drawable/up_right"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>

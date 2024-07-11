@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="@dimen/_3sdp"
+    app:cardUseCompatPadding="true"
+    android:clickable="true"
+    android:focusable="true"
+    app:cardCornerRadius="@dimen/_8sdp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/verse_selector">
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:clickable="true"
+            android:focusable="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:padding="@dimen/_6sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <ImageView
+                    android:layout_width="@dimen/_24sdp"
+                    android:layout_height="@dimen/_24sdp"
+                    android:layout_weight="0.1"
+                    android:rotation="33"
+                    android:src="@drawable/feather" />
+                
+                <TextView
+                    android:id="@+id/tvVerseNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Verse 1"
+                    android:textStyle="bold"
+                    android:layout_weight="2.8"
+                    android:textColor="@color/pitambar"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="@dimen/_15ssp"
+                    android:fontFamily="@font/baloo_bhai_2_semibold"/>
+
+                <ImageView
+                    android:id="@+id/ivNext"
+                    android:layout_width="@dimen/_24sdp"
+                    android:layout_height="@dimen/_24sdp"
+                    android:src="@drawable/arrows"
+                    android:layout_weight="0.1"
+                    android:padding="@dimen/_3sdp"
+                    android:rotation="47"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/verseSanskrit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="धृतराष्ट्र उवाच धर्मक्षेत्रे कुरुक्षेत्रे समवेता युयुत्सवः।मामकाः पाण्डवाश्चैव किमकुर्वत सञ्जय।।1.1।।"
+                android:textSize="@dimen/_15sdp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_8sdp"/>
+
+
+            <TextView
+                android:id="@+id/tvVerse"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:text="Sanjay said, Having thus spoken in the midst of the battlefield, Arjuna cast away his bow and arrow and his mind overwhelmed with sorrow, sat down on the chariot."
+                android:layout_weight="2"
+                android:layout_margin="@dimen/_3sdp"
+                android:layout_gravity="center_vertical"
+                android:textSize="@dimen/_13sdp"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/backgroundImage1"
+            android:layout_width="@dimen/_76sdp"
+            android:layout_height="@dimen/_76sdp"
+            android:src="@drawable/up_right"
+            android:scaleType="centerInside"
+            android:alpha="0.3"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:background="@android:color/transparent"
+            />
+
+
+
+
+
+
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>
